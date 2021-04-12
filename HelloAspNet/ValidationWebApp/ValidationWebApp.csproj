@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Copyright.ascx" />
     <Content Include="FrmInputValid.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
@@ -80,6 +81,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Copyright.ascx.cs">
+      <DependentUpon>Copyright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Copyright.ascx.designer.cs">
+      <DependentUpon>Copyright.ascx</DependentUpon>
+    </Compile>
     <Compile Include="FrmInputValid.aspx.cs">
       <DependentUpon>FrmInputValid.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

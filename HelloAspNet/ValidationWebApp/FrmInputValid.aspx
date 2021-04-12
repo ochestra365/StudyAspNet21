@@ -21,10 +21,15 @@
                 ControlToValidate="TxtPassword" ErrorMessage="암호를 입력하세여" Display="Dynamic" ForeColor="Red" />(필수)<br />
             <asp:TextBox ID="TxtConfirmPassword" runat="server" TextMode="Password" />
             <asp:RegularExpressionValidator ID="ValConfirmPassword" runat="server"
-                ControlToValidate="TxtPassword" ErrorMessage="암호를 입력하세여" Display="Dynamic" ForeColor="Red" />(필수)<br />
+                ControlToValidate="TxtPassword" ErrorMessage="암호확인를 입력하세여" Display="Dynamic" ForeColor="Red" />(필수)<br />
+            <asp:CompareValidator ID="ValComparePassword" runat="server" ControlToValidate="TxtPassword" ErrorMessage="암호가 일치하지 않습니다." Display="Dynamic" /><br />
             <asp:Button ID="BtnLogin" runat="server" OnClick="BtnLogin_Click" Text="로그인"/>
+
+            <asp:TextBox ID="TxtEmail" runat="server" />
+            <asp:RegularExpressionValidator ID="ValEmail" runat="server" ControlToValidate="TxtEmail" ErrorMessage="이메일을 정확히 입력하세요" Display="Dynamic" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/><br />
+            <asp:ValidationSummary ID="ValSummary" runat="server" ShowMessageBox="true" ShowSummary="false" DisplayMode="BulletList" />
         </div>
     </form>
 </body>
 </html>
-<%--8장 유효성체크부분 걍따라하면 된다.  --%>
+<%--8장 유효성체크부분 걍 따라하면 된다.  --%>
