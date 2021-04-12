@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAspNet.Tests", "HelloA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWebApp", "FirstWebApp\FirstWebApp.csproj", "{A49EB423-A747-4C83-9D36-BE5EF49B1070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationWebApp", "ValidationWebApp\ValidationWebApp.csproj", "{A7173B08-BA87-4DDC-8AC6-4F886DE023B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A49EB423-A747-4C83-9D36-BE5EF49B1070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A49EB423-A747-4C83-9D36-BE5EF49B1070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A49EB423-A747-4C83-9D36-BE5EF49B1070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7173B08-BA87-4DDC-8AC6-4F886DE023B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7173B08-BA87-4DDC-8AC6-4F886DE023B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7173B08-BA87-4DDC-8AC6-4F886DE023B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7173B08-BA87-4DDC-8AC6-4F886DE023B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

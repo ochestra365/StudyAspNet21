@@ -33,7 +33,7 @@ namespace FirstWebApp
 
         protected void BtnPostBack_Click(object sender, EventArgs e)
         {
-            var strScript = @"<script> window.alret('PostBack!'); </script>";0
+            var strScript = @"<script> window.alret('PostBack!'); </script>";
             //Response.Write(strScript);
             ClientScript.RegisterClientScriptBlock(this.GetType(), "postScript", strScript);
         }
