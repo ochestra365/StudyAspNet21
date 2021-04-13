@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationWebApp", "Validat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateWebApp", "TemplateWebApp\TemplateWebApp.csproj", "{F75C273A-D1F6-41CA-BB05-FB2FD166B0FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMngWebApp", "StateMngWebApp\StateMngWebApp.csproj", "{C63644D6-45E0-4642-AD00-A0ED7F433B32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F75C273A-D1F6-41CA-BB05-FB2FD166B0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F75C273A-D1F6-41CA-BB05-FB2FD166B0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F75C273A-D1F6-41CA-BB05-FB2FD166B0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C63644D6-45E0-4642-AD00-A0ED7F433B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63644D6-45E0-4642-AD00-A0ED7F433B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63644D6-45E0-4642-AD00-A0ED7F433B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63644D6-45E0-4642-AD00-A0ED7F433B32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
