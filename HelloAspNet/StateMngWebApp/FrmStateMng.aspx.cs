@@ -11,7 +11,30 @@ namespace StateMngWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!Page.IsPostBack)//최초로드
+            {
+                TxtApplication.Text = Application["Now"].ToString();
+                TxtSession.Text = Session["Now"].ToString();
 
+                if (Cache["Now"] != null)
+                    TxtCache.Text = Cache["Now"].ToString();
+
+                if (Request.Cookies["Now"] != null)
+                    TxtCookies.Text = Server.UrlDecode(Request.Cookies["Now"].Value);
+
+                if (ViewState["Now"] != null)
+                    TxtViewState.Text = ViewState["Now"].ToString();
+            }
+        }
+
+        protected void BtnSave_Click(object sender, EventArgs e)
+        {
+            Application["Now"] = TxtApplication.Text;
+            Session["Now"] = TxtSession.Text;
+            Cache["Now"] = TxtCache.Text;
+            Response.Cookies["Now"].Value = Server.UrlEncode(TxtCookies.Text);
+            ViewState["Now"] = TxtViewState.Text;
+            Response.Redirect("FrmStateNow.aspx");
         }
     }
 }

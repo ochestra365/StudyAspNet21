@@ -11,7 +11,7 @@ namespace StateMngWebApp
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-
+            Application["Now"] = DateTime.Now;
         }
         protected void Application_End(object sender, EventArgs e)
         {
@@ -19,7 +19,7 @@ namespace StateMngWebApp
         }
         protected void Session_Start(object sender, EventArgs e)
         {
-
+            Session["Now"] = DateTime.Now;
         }
         protected void Session_End(object sender, EventArgs e)
         {
