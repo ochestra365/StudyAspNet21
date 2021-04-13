@@ -34,7 +34,7 @@ namespace StateMngWebApp
             Cache["Now"] = TxtCache.Text;
             Response.Cookies["Now"].Value = Server.UrlEncode(TxtCookies.Text);
             ViewState["Now"] = TxtViewState.Text;
-            Response.Redirect("FrmStateNow.aspx");
+            Response.Redirect("FrmStateShow.aspx");//여기 잘못 쳐서 안 나왔음. 버튼을 누르면 다른 페이지로 넘어가야 하는 것이다.
         }
     }
 }

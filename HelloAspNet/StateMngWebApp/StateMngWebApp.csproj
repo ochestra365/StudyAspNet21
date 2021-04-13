@@ -67,12 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FrmCounter.aspx" />
+    <Content Include="FrmLogin.aspx" />
     <Content Include="FrmStateMng.aspx" />
     <Content Include="FrmStateShow.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCounter.aspx.cs">
+      <DependentUpon>FrmCounter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCounter.aspx.designer.cs">
+      <DependentUpon>FrmCounter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.aspx.cs">
+      <DependentUpon>FrmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.aspx.designer.cs">
+      <DependentUpon>FrmLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmStateMng.aspx.cs">
       <DependentUpon>FrmStateMng.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
