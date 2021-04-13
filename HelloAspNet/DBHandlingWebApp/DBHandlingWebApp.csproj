@@ -67,11 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FrmDataReader.aspx" />
     <Content Include="FrmDBconn.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDataReader.aspx.cs">
+      <DependentUpon>FrmDataReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDataReader.aspx.designer.cs">
+      <DependentUpon>FrmDataReader.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmDBconn.aspx.cs">
       <DependentUpon>FrmDBconn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
