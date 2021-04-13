@@ -17,7 +17,8 @@ namespace StateMngWebApp
                 {
                     ChkSaveUserID.Checked = true;
                     TxtUserID.Text = Request.Cookies["UserID"].Value;
-                    Page.SetFocus(TxtPassword);0
+                    Page.SetFocus(TxtPassword);
+                    Server.UrlDecode(TxtUserID.Text);
                 }
             }
         }
@@ -26,7 +27,7 @@ namespace StateMngWebApp
         {
             if (ChkSaveUserID.Checked)
             {
-                HttpCookie cookie = new HttpCookie("UserID", TxtUserID.Text);
+                HttpCookie cookie = new HttpCookie("UserID",Server.UrlEncode(TxtUserID.Text));
                 cookie.Expires = DateTime.Now.AddDays(10);//10일간 데이터 저장
                 Response.Cookies.Add(cookie);
             }

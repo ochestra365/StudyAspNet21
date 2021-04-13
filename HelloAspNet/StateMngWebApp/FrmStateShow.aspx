@@ -18,6 +18,10 @@
             <h3>클라이언트에 저장</h3>
             Cookies : <asp:TextBox ID="TxtCookies" runat="server"></asp:TextBox><br />
             ViewState: <asp:TextBox ID="TxtViewState" runat="server"></asp:TextBox><br />
+
+            <hr />
+            <asp:Label ID="LblSiteName" runat="server" /><br />
+            <asp:Label ID="LblConnectionStirng" runat="server" />
         </div>
     </form>
 </body>

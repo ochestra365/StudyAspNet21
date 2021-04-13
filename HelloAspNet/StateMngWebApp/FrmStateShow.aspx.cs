@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -17,11 +18,14 @@ namespace StateMngWebApp
             if (Cache["Now"] != null)
                 TxtCache.Text = Cache["Now"].ToString();
 
-            if (Request.Cookies["Now"] != null)
+            if (Request.Cookies["UserID"] != null)
                 TxtCookies.Text = Server.UrlDecode(Request.Cookies["Now"].Value);
 
             if (ViewState["Now"] != null)
                 TxtViewState.Text = ViewState["Now"].ToString();
+
+            LblSiteName.Text = WebConfigurationManager.AppSettings["SITE_NAME"].ToString();
+            LblConnectionStirng.Text = WebConfigurationManager.ConnectionStrings["Local_Connstirng"].ConnectionString;//WebConfigurationManager의 멤버가 ConnectionString이다.
         }
     }
 }
