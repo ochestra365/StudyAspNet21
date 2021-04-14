@@ -22,6 +22,7 @@ namespace DBHandlingWebApp.Models
             return maxim;
         }
         //조회
+
         //수정
         //삭제
     }
