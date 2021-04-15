@@ -22,6 +22,7 @@ namespace DotNetNote.Models
             BoardLibrary.LOGGER.Info("Dapper 리포지터리 생성!");
         }
 
+        #region Notes 테이블 처리영역
         /// <summary>
         /// 데이터 저장, 수정, 답변 공통 메서드
         /// </summary>
@@ -287,7 +288,9 @@ namespace DotNetNote.Models
                 + " FROM Notes Order By Id Desc";
             return con.Query<Note>(sql).ToList();
         }
+        #endregion
 
+        #region 노트테이블 처리영역
         /// <summary>
         /// 특정 게시물에 댓글 추가
         /// </summary>
@@ -358,5 +361,6 @@ namespace DotNetNote.Models
                 FROM NoteComments Order By Id Desc";
             return con.Query<NoteComment>(sql).ToList();
         }
+        #endregion
     }
 }

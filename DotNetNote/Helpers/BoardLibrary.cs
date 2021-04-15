@@ -175,17 +175,25 @@ namespace Helpers
         public static string FuncFileDownSingle(
             int id, string strFileName, string strFileSize)
         {
-            if (strFileName.Length > 0)
+            try
             {
-                return "<a href=\"/DotNetNote/BoardDown.aspx?Id="
-                    + id.ToString() + "\">"
-                    + DownloadType(strFileName, strFileName + "("
-                    + ConvertToFileSize(Convert.ToInt32(strFileSize)) + ")")
-                    + "</a>";
+                if (strFileName.Length > 0)
+                {
+                    return "<a href=\"/DotNetNote/BoardDown.aspx?Id="
+                        + id.ToString() + "\">"
+                        + DownloadType(strFileName, strFileName + "("
+                        + ConvertToFileSize(Convert.ToInt32(strFileSize)) + ")")
+                        + "</a>";
+                }
+                else
+                {
+                    return "-";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return "-";
+                LOGGER.Error($"BoardLibrary.FuncFileDownSingle 예외발생 : {ex}");
+                return "err";
             }
         }
         #endregion
