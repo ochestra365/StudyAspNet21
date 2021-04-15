@@ -29,7 +29,7 @@ namespace DotNetNote.Models
             // 파라미터 추가
             var p = new DynamicParameters();
 
-            //[a] 공통
+            //[a] 공통 Dapper방식
             p.Add("@Name", value: n.Name, dbType: DbType.String);
             p.Add("@Email", value: n.Email, dbType: DbType.String);
             p.Add("@Title", value: n.Title, dbType: DbType.String);
@@ -43,9 +43,9 @@ namespace DotNetNote.Models
             switch (formType)
             {
                 case BoardWriteFormType.Write:
-                    //[b] 글쓰기 전용0
+                    //[b] 글쓰기 전용
                     p.Add("@PostIp", value: n.PostIp, dbType: DbType.String);
-
+                    //저장프로시저 결과값 1 또는 0이 넘어온다. 1은 저장 성공, 0은 저장 실패
                     r = con.Execute("WriteNote", p
                         , commandType: CommandType.StoredProcedure);
                     break;
