@@ -151,7 +151,7 @@
                 <span style="color: #aaaaaa;">(아래에 제시되는 보안코드를 입력하십시오.)</span>
                 <br />
                 <asp:Image ID="imgSecurityImageText" runat="server"
-                    ImageUrl="~/DotNetNote/Board/ImageText.aspx" />
+                    ImageUrl="ImageText.aspx" />
                 <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
             </td>
         </tr>
