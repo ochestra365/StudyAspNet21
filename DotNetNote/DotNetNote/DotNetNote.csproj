@@ -329,6 +329,7 @@
     <Compile Include="Models\BoardWriteFormType.cs" />
     <Compile Include="Models\DBRepository.cs" />
     <Compile Include="Models\Note.cs" />
+    <Compile Include="Models\NoteComment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

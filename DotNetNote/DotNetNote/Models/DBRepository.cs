@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Helpers;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -17,6 +18,8 @@ namespace DotNetNote.Models
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings[
                 "ConnectionString"].ConnectionString);
+
+            BoardLibrary.LOGGER.Info("Dapper 리포지터리 생성!");
         }
 
         /// <summary>
@@ -83,7 +86,7 @@ namespace DotNetNote.Models
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception(ex.Message); // 로깅 처리 권장 영역
+                BoardLibrary.LOGGER.Error($"예외발생 : {ex.Message}");
             }
         }
 
@@ -100,6 +103,7 @@ namespace DotNetNote.Models
             catch (System.Exception ex)
             {
                 throw new System.Exception(ex.Message);
+
             }
             return r;
         }
@@ -115,7 +119,7 @@ namespace DotNetNote.Models
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception(ex.Message);
+                BoardLibrary.LOGGER.Error($"예외발생 : {ex.Message}");
             }
         }
 
@@ -133,7 +137,8 @@ namespace DotNetNote.Models
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception(ex.Message);
+                BoardLibrary.LOGGER.Error($"예외발생 : {ex.Message}");
+                return null;
             }
         }
 
@@ -155,7 +160,8 @@ namespace DotNetNote.Models
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception(ex.Message);
+                BoardLibrary.LOGGER.Error($"예외발생 : {ex.Message}");
+                return -1;
             }
         }
 

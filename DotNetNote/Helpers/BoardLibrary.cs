@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -7,6 +8,10 @@ namespace Helpers
 {
     public class BoardLibrary
     {
+        /// <summary>
+        /// NLOG추가
+        /// </summary>
+        public static readonly Logger LOGGER = LogManager.GetCurrentClassLogger();
         #region 각 글의 Step별 들여쓰기 처리
         /// <summary>
         /// 각 글의 Step별 들여쓰기 처리
