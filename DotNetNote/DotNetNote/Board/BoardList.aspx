@@ -3,19 +3,33 @@
 <%@ Register Src="~/Controls/PagingControl.ascx" TagPrefix="uc1" TagName="PagingControl" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h3 class="text-center">게시판</h3>
-    <span>글 목록 - 완성형 게시판</span>
+     <h2 style="text-align: center;">게시판</h2>
+    <span style="color: #ff0000">글 목록 - 완성형 게시판입니다.</span>
     <hr />
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <asp:Literal ID="LblTotalRecord" runat="server"></asp:Literal>
-                <asp:GridView ID="GrvNotes" runat="server" AutoGenerateColumns="false"
-                    DataKeyNames="Id" CssClass="table table-bordered table-hover table-stripted table-responsive">
+    <table style="width: 700px; margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>
+                <style>
+                    table th {
+                        text-align: center;
+                    }
+                </style>
+                <div style=
+                    "font-style: italic; text-align: right; font-size: 8pt;">
+                    Total Record:
+                    <asp:Literal ID="LblTotalRecord" runat="server"></asp:Literal>
+                </div>
+                <asp:GridView ID="GrvNotes"
+                    runat="server" AutoGenerateColumns="False" DataKeyNames="Id"
+                    CssClass="table table-bordered table-hover table-condensed 
+                        table-striped table-responsive" OnSelectedIndexChanged="GrvNotes_SelectedIndexChanged">
                     <Columns>
-                        <asp:TemplateField HeaderText="번호" HeaderStyle-Width="50px" ItemStyle-HorizontalAlign="Right">
-                            <ItemTemplate><%#Eval("Id") %></ItemTemplate>
+                        <asp:TemplateField HeaderText="번호"
+                            HeaderStyle-Width="50px"
+                            ItemStyle-HorizontalAlign="Center">
+                            <ItemTemplate>
+                                <%# Eval("Id") %>
+                            </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="제 목"
                             ItemStyle-HorizontalAlign="Left"
@@ -23,7 +37,8 @@
                             <ItemTemplate>
                                 <%# Helpers.BoardLibrary.FuncStep(Eval("Step")) %>
                                 <asp:HyperLink ID="lnkTitle" runat="server"
-                                    NavigateUrl='<%# "BoardView.aspx?Id=" + Eval("Id") %>'>
+                                    NavigateUrl=
+                                    '<%# "BoardView.aspx?Id=" + Eval("Id") %>'>
                                     <%# Helpers.StringLibrary.CutStringUnicode(
                                         Eval("Title").ToString(), 30) %>
                                 </asp:HyperLink>
@@ -36,13 +51,15 @@
                             HeaderStyle-Width="70px"
                             ItemStyle-HorizontalAlign="Center">
                             <ItemTemplate>
-                                <%# Eval("FileName") %>
-                                <%--        <%# Helpers.BoardLibrary.FuncFileDownSingle(
+                                <%# Helpers.BoardLibrary.FuncFileDownSingle(
                                     Convert.ToInt32(Eval("Id")), 
                                     Eval("FileName").ToString(), 
-                                    Eval("FileSize").ToString()) %>--%>
+                                    Eval("FileSize").ToString()) %>
                             </ItemTemplate>
                         </asp:TemplateField>
+                        <asp:BoundField DataField="Name" HeaderText="작성자"
+                            HeaderStyle-Width="60px"
+                            ItemStyle-HorizontalAlign="Center"></asp:BoundField>
                         <asp:TemplateField HeaderText="작성일"
                             ItemStyle-Width="90px"
                             ItemStyle-HorizontalAlign="Center">
@@ -54,30 +71,23 @@
                         <asp:BoundField DataField="ReadCount" HeaderText="조회수"
                             ItemStyle-HorizontalAlign="Right"
                             HeaderStyle-Width="60px"></asp:BoundField>
-                        <asp:BoundField DataField="Name" HeaderText="작성자" HeaderStyle-Width="60px" ItemStyle-HorizontalAlign="Center" />
                     </Columns>
                 </asp:GridView>
-            </div>
-        </div>
-    </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <uc1:PagingControl runat="server"
+                    ID="PagingControl" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                <a href="BoardWrite.aspx" class="btn btn-primary">글쓰기</a>
+            </td>
+        </tr>
+    </table>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="text-center">
-                    <uc1:PagingControl runat="server" ID="PagingControl" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="text-right">
-                    <a href="BoardList.aspx" class="btn btn-primary">글쓰기</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<%--    <uc1:BoardSearchFormSingleControl runat="server"
+        ID="BoardSearchFormSingleControl" />--%>
 </asp:Content>
