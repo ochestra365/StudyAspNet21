@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Helpers
 {
-    class BoardLibrary
+    public class BoardLibrary
     {
         #region 각 글의 Step별 들여쓰기 처리
         /// <summary>

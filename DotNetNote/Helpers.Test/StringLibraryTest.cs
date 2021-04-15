@@ -28,5 +28,13 @@ namespace Helpers.Test
             var actual = StringLibrary.CutStringUnicode(strCut, intChar);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void IsPhotoTest()
+        {
+            var imagePath = @"D:\sources\StudyDesktopApp\WPFApp\WpfExecutiveBank\SnakeBiteGame\main.png";
+            bool result = BoardLibrary.IsPhoto(imagePath);
+            Assert.IsFalse(result, "file extension must be png, jpg, gif");
+        }
     }
 }
