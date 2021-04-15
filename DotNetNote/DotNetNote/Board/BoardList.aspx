@@ -10,9 +10,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <asp:Literal ID="LblTotalRecord" runat="server" ></asp:Literal>
+                <asp:Literal ID="LblTotalRecord" runat="server"></asp:Literal>
                 <asp:GridView ID="GrvNotes" runat="server" AutoGenerateColumns="false"
-                    DatakeyNames="Id" CssClass="table table-bordered table-hover table-stripted table-responsive">
+                    DataKeyNames="Id" CssClass="table table-bordered table-hover table-stripted table-responsive">
                     <Columns>
                         <asp:TemplateField HeaderText="번호" HeaderStyle-Width="50px" ItemStyle-HorizontalAlign="Right">
                             <ItemTemplate><%#Eval("Id") %></ItemTemplate>
@@ -23,8 +23,7 @@
                             <ItemTemplate>
                                 <%# Helpers.BoardLibrary.FuncStep(Eval("Step")) %>
                                 <asp:HyperLink ID="lnkTitle" runat="server"
-                                    NavigateUrl=
-                                    '<%# "BoardView.aspx?Id=" + Eval("Id") %>'>
+                                    NavigateUrl='<%# "BoardView.aspx?Id=" + Eval("Id") %>'>
                                     <%# Helpers.StringLibrary.CutStringUnicode(
                                         Eval("Title").ToString(), 30) %>
                                 </asp:HyperLink>
@@ -33,18 +32,18 @@
                                 <%# Helpers.BoardLibrary.FuncNew(Eval("PostDate"))%>
                             </ItemTemplate>
                         </asp:TemplateField>
-                          <asp:TemplateField HeaderText="파일"
+                        <asp:TemplateField HeaderText="파일"
                             HeaderStyle-Width="70px"
                             ItemStyle-HorizontalAlign="Center">
                             <ItemTemplate>
                                 <%# Eval("FileName") %>
-                       <%--        <%# Helpers.BoardLibrary.FuncFileDownSingle(
+                                <%--        <%# Helpers.BoardLibrary.FuncFileDownSingle(
                                     Convert.ToInt32(Eval("Id")), 
                                     Eval("FileName").ToString(), 
                                     Eval("FileSize").ToString()) %>--%>
                             </ItemTemplate>
                         </asp:TemplateField>
-                         <asp:TemplateField HeaderText="작성일"
+                        <asp:TemplateField HeaderText="작성일"
                             ItemStyle-Width="90px"
                             ItemStyle-HorizontalAlign="Center">
                             <ItemTemplate>
@@ -65,7 +64,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <uc1:PagingControl runat="server" id="PagingControl" />
+                <div class="text-center">
+                    <uc1:PagingControl runat="server" ID="PagingControl" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="text-right">
+                    <a href="BoardList.aspx" class="btn btn-primary">글쓰기</a>
+                </div>
             </div>
         </div>
     </div>

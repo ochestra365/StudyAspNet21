@@ -10,7 +10,7 @@ namespace DotNetNote.Controls
 {
     public partial class PagingControl : System.Web.UI.UserControl
     {
-            // 공통 속성: 검색 모드: 검색 모드이면 true, 그렇지 않으면 false.
+        // 공통 속성: 검색 모드: 검색 모드이면 true, 그렇지 않으면 false.
         public bool SearchMode { get; set; } = false; // 일반 모드, 검색 모드
         public string SearchField { get; set; } // 검색 필드: Name, Title, ...
         public string SearchQuery { get; set; } // 검색 내용
@@ -173,7 +173,8 @@ namespace DotNetNote.Controls
             // <!--이전 10개, 다음 10개 페이징 처리 종료-->
             strPage += "</ul>";
 
+
             CtlPaging.Text = strPage;
         }
-    } 
+    }
 }
