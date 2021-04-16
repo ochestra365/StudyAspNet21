@@ -1,6 +1,7 @@
 ﻿using DotNetNote.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,6 +14,10 @@ namespace DotNetNote.Board
         public BoardWriteFormType Formtype { get; set; } = BoardWriteFormType.Write;//글쓰기가 기본 값.
         private string _Id;//리스트에서 넘겨주는 번호
         //private string _Mode;//뷰에서 넘겨주는 모드 값.(Edit)
+
+        private string _BaseDir = @"D:\sources\StudyAspNet21\DotNetNote\DotNetNote\Files";//Files
+        private string _FileName = "";//파일명
+        private int _FileSize = 0;//파일사이즈
         protected void Page_Load(object sender, EventArgs e)
         {
             _Id = Request["Id"];//GET/POST 모두 다 받음
@@ -74,6 +79,8 @@ namespace DotNetNote.Board
             else if (ViewState["Mode"].ToString() == "Reply") Formtype = BoardWriteFormType.Reply;
             else Formtype = BoardWriteFormType.Write;
 
+            UPloadFile();
+
             //TODO:파일업로드
             if (IsImageTextCorrect())
             {
@@ -84,8 +91,8 @@ namespace DotNetNote.Board
                 note.Email = txtEmail.Text;
                 note.Homepage = txtHomepage.Text;//필수, 추가할 것.
                 note.Content = txtContent.Text;
-                note.FileName = "";
-                note.FileSize = 0;
+                note.FileName = _FileName;
+                note.FileSize = _FileSize;
                 note.Password = txtPassword.Text;
                 note.PostIp = Request.UserHostAddress;
                 note.Encoding = rdoEncoding.SelectedValue;//Text, Html, Mixed
@@ -100,6 +107,8 @@ namespace DotNetNote.Board
                     case BoardWriteFormType.Modify:
                         note.ModifyIp = Request.UserHostAddress;
                         //TODO : file 처리
+                        note.FileName = ViewState["FileName"].ToString();
+                        note.FileSize = Convert.ToInt32(ViewState["FileSize"]);
                         if (repo.UpdateNote(note) > 0) Response.Redirect($"BoardView.aspx?Id={_Id}");
                         else lblError.Text = "업데이트 실패, 암호를 확인하세요";
                         break;
@@ -117,6 +126,38 @@ namespace DotNetNote.Board
             else
             {
                 lblError.Text = "보안코드가 틀립니다. 다시 입력하세요";
+            }
+        }
+        /// <summary>
+        /// 파일 업로드 처리
+        /// </summary>
+        private void UPloadFile()
+        {
+            _BaseDir = Server.MapPath("../Files");
+            _FileName = "";
+            _FileSize = 0;
+
+            if(txtFileName.PostedFile != null)
+            {
+                if(txtFileName.PostedFile.FileName.Trim().Length>0 &&
+                    txtFileName.PostedFile.ContentLength > 0)
+                {
+                    if(Formtype==BoardWriteFormType.Modify)//수정일 경우에만
+                    {
+                        ViewState["FileName"] = Helpers.FileUtility.GetFileNameWithNumbering(_BaseDir, Path.GetFileName(txtFileName.PostedFile.FileName));
+                        ViewState["FileSize"] = txtFileName.PostedFile.ContentLength;
+                        //업로드
+                        txtFileName.PostedFile.SaveAs(Path.Combine(_BaseDir, ViewState["FileName"].ToString()));
+                    }
+                    else//Write, Reply
+                    {
+                        //폴더 이미 test.txt 있으면 test(1).txt
+                        _FileName = Helpers.FileUtility.GetFileNameWithNumbering(_BaseDir,txtFileName.PostedFile.FileName);
+                        _FileSize = txtFileName.PostedFile.ContentLength;
+                        //업로드
+                        txtFileName.PostedFile.SaveAs(Path.Combine(_BaseDir, _FileName));
+                    }
+                }
             }
         }
 

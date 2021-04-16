@@ -36,11 +36,11 @@
                             HeaderStyle-Width="70px"
                             ItemStyle-HorizontalAlign="Center">
                             <ItemTemplate>
-                                <%# Eval("FileName") %>
-                                <%--<%# Helpers.BoardLibrary.FuncFileDownSingle(
+                              <%--  <%# Eval("FileName") %>--%>
+                                <%# Helpers.BoardLibrary.FuncFileDownSingle(
                                     Convert.ToInt32(Eval("Id")), 
                                     Eval("FileName").ToString(), 
-                                    Eval("FileSize").ToString()) %>--%>
+                                    Eval("FileSize").ToString()) %>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:BoundField DataField="Name" HeaderText="작성자"

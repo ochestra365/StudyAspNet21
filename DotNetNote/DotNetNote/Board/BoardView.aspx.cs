@@ -52,6 +52,15 @@ namespace DotNetNote.Board
             lblHomepage.Text = $"<a href='{note.Homepage}' target='_blank'>{note.Homepage}</a>";
             lblPostDate.Text = note.PostDate.ToString();
             lblPostIP.Text = note.PostIp;
+
+            if (note.FileName.Length > 1)
+            {
+                lblFile.Text = $"{note.FileName} / 다운로드 {note.DownCount}";
+            }
+            else
+            {
+                lblFile.Text = "(None)";
+            }
         }
     }
 }
