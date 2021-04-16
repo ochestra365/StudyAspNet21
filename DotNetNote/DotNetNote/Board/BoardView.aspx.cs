@@ -11,10 +11,11 @@ namespace DotNetNote.Board
     public partial class BoardView : System.Web.UI.Page
     {
         private string _Id;//현재 게시글 번호
+        private string _mode;//뷰에서 넘겨주는 모드 값.(Edit)
         protected void Page_Load(object sender, EventArgs e)
         {
             lnkDelete.NavigateUrl = $"BoardDelete.aspx?Id={Request["Id"]}";
-            lnkModify.NavigateUrl = $"BoardModify.aspx?Id={Request["Id"]}";
+            lnkModify.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Edit";
             lnkReply.NavigateUrl = $"BoardReply.aspx?Id={Request["Id"]}";
 
             _Id = Request["Id"];
