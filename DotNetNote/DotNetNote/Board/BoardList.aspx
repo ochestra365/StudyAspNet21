@@ -9,7 +9,7 @@
  <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <asp:Literal ID="LblTotalRecord" runat="server"></asp:Literal>
+                <asp:Literal ID="LblTotalRecord" runat="server"></asp:Literal><br />
                 <asp:GridView ID="GrvNotes" runat="server" AutoGenerateColumns="false"
                     DataKeyNames="Id" CssClass="table table-bordered table-hover table-striped table-responsive">
                     <Columns>

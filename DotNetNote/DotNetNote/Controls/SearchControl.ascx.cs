@@ -23,4 +23,4 @@ namespace DotNetNote.Controls
             Response.Redirect(strQuery);
         }
     }
-}
+}//컨트롤 넣기
