@@ -19,9 +19,9 @@ namespace DotNetNote.Board
             if (!Page.IsPostBack)
             {
                 ViewState["Mode"] = Request["Mode"];//Edit
-
                 if (ViewState["Mode"].ToString() == "Edit") Formtype = BoardWriteFormType.Modify;
                 else if (ViewState["Mode"].ToString() == "Reply") Formtype = BoardWriteFormType.Reply;
+                else Formtype = BoardWriteFormType.Write;
 
                 switch (Formtype)
                 {
@@ -37,6 +37,10 @@ namespace DotNetNote.Board
                         DisplaydataForReply();
                         break;
                 }
+            }
+            else
+            {
+                lblError.Text = "보안코드가 틀립니다. 다시 입력하세요";
             }
         }
 
@@ -66,6 +70,11 @@ namespace DotNetNote.Board
 
         protected void btnWrite_Click(object sender, EventArgs e)
         {
+            if (ViewState["Mode"].ToString() == "Edit") Formtype = BoardWriteFormType.Modify;
+            else if (ViewState["Mode"].ToString() == "Reply") Formtype = BoardWriteFormType.Reply;
+            else Formtype = BoardWriteFormType.Write;
+
+            //TODO:파일업로드
             if (IsImageTextCorrect())
             {
 
@@ -95,8 +104,13 @@ namespace DotNetNote.Board
                         else lblError.Text = "업데이트 실패, 암호를 확인하세요";
                         break;
                     case BoardWriteFormType.Reply:
+                        note.ParentNum = Convert.ToInt32(_Id);
+                        repo.ReplyNote(note);
+                        Response.Redirect("BoardList.aspx");
                         break;
                     default:
+                        repo.Add(note);
+                        Response.Redirect("BoardList.aspx");
                         break;
                 }
             }
@@ -120,6 +134,11 @@ namespace DotNetNote.Board
                 }
             }
             return false;
+        }
+
+        protected void chkUpload_CheckedChanged(object sender, EventArgs e)
+        {
+            pnlFile.Visible = !pnlFile.Visible;0
         }
     }
 }

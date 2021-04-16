@@ -16,7 +16,7 @@ namespace DotNetNote.Board
         {
             lnkDelete.NavigateUrl = $"BoardDelete.aspx?Id={Request["Id"]}";
             lnkModify.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Edit";
-            lnkReply.NavigateUrl = $"BoardReply.aspx?Id={Request["Id"]}";
+            lnkReply.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Reply";
 
             _Id = Request["Id"];
             if (_Id == null) Response.Redirect("BoardList.aspx");
