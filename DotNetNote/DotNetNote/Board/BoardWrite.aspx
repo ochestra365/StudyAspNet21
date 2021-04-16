@@ -11,7 +11,7 @@
               Formtype == DotNetNote.Models.BoardWriteFormType.Modify)
             { %>
         <tr>
-            <td class="BoardWriteFormTableLeftStyle">
+            <td style="text-align:right;">
                 <span style="color: #ff0000;">*</span>번 호
             </td>
             <td style="width: 500px;">
@@ -20,7 +20,7 @@
         </tr>
         <% } %>
         <tr>
-            <td class="text-align: right;">
+            <td style="text-align:right;"">
                 <span style="color: #ff0000;">*</span>이&nbsp;름
             </td>
             <td style="width: 500px;">
