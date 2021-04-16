@@ -98,8 +98,8 @@
                 <span style="color: #aaaaaa; font-style: italic">(Optional)</span>
                 <br />
                 <asp:Panel ID="pnlFile" runat="server" Width="480px"
-                    Visible="false" Height="25px">
-                    <input id="txtFileName" style="width: 290px; height: 19px"
+                    Visible="false" Height="35px">
+                    <input id="txtFileName" style="width: 290px; height: 30px"
                         type="file" name="txtFileName" runat="server">
                     <asp:Label ID="lblFileNamePrevious" Text="" runat="server"
                         Visible="false" />

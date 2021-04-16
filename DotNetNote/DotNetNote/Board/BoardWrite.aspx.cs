@@ -138,7 +138,7 @@ namespace DotNetNote.Board
 
         protected void chkUpload_CheckedChanged(object sender, EventArgs e)
         {
-            pnlFile.Visible = !pnlFile.Visible;0
+            pnlFile.Visible = !pnlFile.Visible;
         }
     }
 }
