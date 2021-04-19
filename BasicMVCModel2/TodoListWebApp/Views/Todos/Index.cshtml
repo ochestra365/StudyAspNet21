@@ -16,38 +16,46 @@
                 @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-              제목  @*Html.DisplayNameFor(model => model.Title)*@
+                제목  @*Html.DisplayNameFor(model => model.Title)*@
             </th>
             <th>
-               생성일 @*@Html.DisplayNameFor(model => model.IsDone)*@
+                생성일 @*@Html.DisplayNameFor(model => model.IsDone)*@
             </th>
             <th>
-               완료 @*@Html.DisplayNameFor(model => model.CreationDate)*@
+                완료 @*@Html.DisplayNameFor(model => model.CreationDate)*@
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsDone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreationDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-      
-                <a asp-action="Done" asp-route-id="@item.Id">완료</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @if (item.IsDone)
+                    {
+                        <s>@item.Title</s>
+                    }
+                    else
+                    {
+                        <span>@item.Title</span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsDone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreationDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+
+                    <a asp-action="Done" asp-route-id="@item.Id">완료</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

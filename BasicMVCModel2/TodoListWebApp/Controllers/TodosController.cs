@@ -120,7 +120,7 @@ namespace TodoListWebApp.Controllers
         }
 
         // GET: Todos/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Done(int? id)
         {
             if (id == null)
             {
@@ -134,20 +134,16 @@ namespace TodoListWebApp.Controllers
                 return NotFound();
             }
 
-            return View(todo);
-        }
-
-        // POST: Todos/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var todo = await _context.Todos.FindAsync(id);
-            _context.Todos.Remove(todo);
+            todo.IsDone = true;
+            _context.Todos.Update(todo);
             await _context.SaveChangesAsync();
+
+           // return RedirectToAction("Index");
             return RedirectToAction(nameof(Index));
         }
 
+        // POST: Todos/Delete/5
+        
         private bool TodoExists(int id)
         {
             return _context.Todos.Any(e => e.Id == id);
