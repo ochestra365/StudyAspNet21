@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMVCModel2", "BasicMVCM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbWebApp", "DbWebApp\DbWebApp.csproj", "{E4F7BC91-52F3-4122-B468-BC837517170C}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MvcWebLab.Database", "MvcWebLab.Database\MvcWebLab.Database.sqlproj", "{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListWebApp", "TodoListWebApp\TodoListWebApp.csproj", "{39FB97C4-FB13-4055-9078-A60BD8E3331D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,16 @@ Global
 		{E4F7BC91-52F3-4122-B468-BC837517170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4F7BC91-52F3-4122-B468-BC837517170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4F7BC91-52F3-4122-B468-BC837517170C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989796DC-9721-4EFE-A1F8-F74BFE7ABA58}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{39FB97C4-FB13-4055-9078-A60BD8E3331D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FB97C4-FB13-4055-9078-A60BD8E3331D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FB97C4-FB13-4055-9078-A60BD8E3331D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FB97C4-FB13-4055-9078-A60BD8E3331D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
