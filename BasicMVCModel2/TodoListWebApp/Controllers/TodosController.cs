@@ -57,6 +57,9 @@ namespace TodoListWebApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                todo.IsDone = false;
+                todo.CreationDate = DateTime.Now;
+
                 _context.Add(todo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -85,7 +88,7 @@ namespace TodoListWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,IsDone,CreationDate")] Todo todo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title")] Todo todo)
         {
             if (id != todo.Id)
             {
@@ -96,6 +99,7 @@ namespace TodoListWebApp.Controllers
             {
                 try
                 {
+                    todo.CreationDate = DateTime.Now;
                     _context.Update(todo);
                     await _context.SaveChangesAsync();
                 }
