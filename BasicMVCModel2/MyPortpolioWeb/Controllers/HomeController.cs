@@ -37,6 +37,19 @@ namespace MyPortpolioWeb.Controllers
             return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Portpolio()
+        {
+            return View();
+        }
+        public IActionResult Board()
+        {
+            return View();
+        }
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
