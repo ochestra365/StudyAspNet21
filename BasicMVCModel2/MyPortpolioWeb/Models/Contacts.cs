@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyPortpolioWeb.Models
 {
-    public class Contact
+    public class Contacts
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "이름은 필수입니다.")]

@@ -1,4 +1,74 @@
-﻿@model IEnumerable<MyPortpolioWeb.Models.Contact>
+﻿@model MyPortpolioWeb.Models.Contacts
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="col-lg col-md ml-auto mr-auto">
+    <div class="card card-login">
+        <div class="form" method="" action="Index">
+            <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Contact</h4>
+                <div class="social-line">
+<a href="#pablo" class="btn btn-just-icon btn-link">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    <a href="#pablo" class="btn btn-just-icon btn-link">
+        <i class="fa fa-twitter"></i>
+    </a>
+    <a href="#pablo" class="btn btn-just-icon btn-link">
+        <i class="fa fa-google-plus"></i>
+    </a>
+</div>
+            </div>
+            <div class="section section-contact">
+               <div class="col-md-8 ml-auto mr-auto">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">face</i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" asp-for="Name" placeholder="Your Name">
+                        <input type="text" class="form-control" asp-for="Name" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">mail</i>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control" asp-for="Email" placeholder="Email">
+                        <input type="text" class="form-control" asp-for="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="emapleMessage" class="bmd-label-floating">내용</label>
+                        <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                    </div>
+                   <div class="row">
+                       <div class="col-md-4 ml-auto mr-auoto text-center">
+                           <button class="btn btn-primary btn-raised">
+                               Send
+                           </button>
+                       </div>
+                   </div>
+                    <div class="row">
+                            <div class="col">
+                                @if(ViewBag.Message ! == null)
+                        {
+                            <span>@ViewBag.Message</span>
+                        }
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+@*@model IEnumerable<MyPortpolioWeb.Models.Contacts>
 
 @{
     ViewData["Title"] = "Index";
@@ -20,7 +90,7 @@
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Contets)
+                @Html.DisplayNameFor(model => model.Contents)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.RegDate)
@@ -29,26 +99,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contets)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RegDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Models)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contents)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
-</table>
+</table>*@
