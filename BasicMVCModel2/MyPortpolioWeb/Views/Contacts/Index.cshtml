@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
 }
 
-<div class="col-lg col-md ml-auto mr-auto">
+@*<div class="col-lg col-md ml-auto mr-auto">
     <div class="card card-login">
         <div class="form" method="" action="Index">
             <div class="card-header card-header-primary text-center">
@@ -66,60 +66,69 @@
                 </div>
         </div>
     </div>
+</div>*@
+
+<div class="col-lg col-md ml-auto mr-auto">
+    <div class="card card-login">
+        <div class="card-header card-header-primary text-center">
+            <h4 class="card-title">Contact</h4>
+            <div class="social-line">
+                @*<a href="#pablo" class="btn btn-just-icon btn-link">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-just-icon btn-link">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-just-icon btn-link">
+                        <i class="fa fa-google-plus"></i>
+                    </a>*@
+            </div>
+        </div>
+        <div class="section section-contacts">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    @*<h2 class="text-center title">Contact</h2>*@
+                    <h4 class="text-center description">채용에 관심이 있으신 분은 여기로 연락바랍니다.</h4>
+                    <form class="contact-form" asp-action="Index">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating" asp-for="Name">성함</label>
+                                    <input type="text" class="form-control" asp-for="Name">
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating" asp-for="Email">이메일</label>
+                                    <input type="email" class="form-control" asp-for="Email">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleMessage" class="bmd-label-floating" asp-for="Contets">내용</label>
+                            <textarea type="text" class="form-control" rows="4" id="exampleMessage" asp-for="Contets"></textarea>
+                            <span asp-validation-for="Contets" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ml-auto mr-auto text-center">
+                                <button type="submit" class="btn btn-primary btn-raised">
+                                    전송
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                @if (ViewBag.Message != null)
+                                {
+                                    <span>@ViewBag.Message</span>
+                                }
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-@*@model IEnumerable<MyPortpolioWeb.Models.Contacts>
-
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_LoginLayout.cshtml";
-}
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contents)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RegDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Models)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Contents)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RegDate)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>*@
