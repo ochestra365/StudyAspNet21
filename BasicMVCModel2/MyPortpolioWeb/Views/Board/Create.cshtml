@@ -46,8 +46,7 @@
     </div>
 </div>-->
 
-<script src="~/plugin/ckeditor_4.16.0_full/ckeditor/ckeditor.js"></script>
-
+<script src="~/plugin//ckeditor//ckeditor.js"></script>
 <div class="col-lg col-md ml-auto mr-auto">
     <div class="card card-login">
         <div class="section section-contacts" style="padding: 40px 0;">
@@ -67,10 +66,13 @@
                             <span asp-validation-for="Writer" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            @Html.LabelFor(model => model.Contents, new { @class = "control-label" })
-                            @Html.TextAreaFor(model => model.Contents,
-                                new { @id = "EditorContents", @class = "form-control", @rows = "10" })
+                            <label asp-for="Contents" class="control-label">Contents</label>
+                            <textarea asp-for="Contents" id="EditorContents" class="form-control" rows="10"></textarea>
                             <script>CKEDITOR.replace("EditorContents");</script>
+                            @*@Html.LabelFor(model => model.Contents, new { @class = "control-label" })
+        @Html.TextAreaFor(model => model.Contents,
+            new { @id = "EditorContents", @class = "form-control", @rows = "10" })
+        <script>CKEDITOR.replace("EditorContents");</script>*@
                         </div>
                         <div class="form-group">
                             <input type="submit" value="저장" class="btn btn-primary" />&nbsp;
