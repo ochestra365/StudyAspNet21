@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyPortpolioWeb.Data;
 using MyPortpolioWeb.Models;
+using X.PagedList;//page리스트 라이브러리 추가 2021.04.22
 
 namespace MyPortpolioWeb.Controllers
 {
@@ -20,9 +21,13 @@ namespace MyPortpolioWeb.Controllers
         }
 
         // GET: Board
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
-            return View(await _context.Boards.ToListAsync());
+            var pageNumber = page ?? 1;//page 값이 0이면 1
+            var pageSize = 10;
+
+            var boards = await _context.Boards.ToPagedListAsync(pageNumber, pageSize);
+            return View(boards);
         }
 
         // GET: Board/Details/5
@@ -39,7 +44,10 @@ namespace MyPortpolioWeb.Controllers
             {
                 return NotFound();
             }
-
+            //ReadCount 증가
+            board.ReadCount += 1;
+            _context.Boards.Update(board);
+            _context.SaveChanges();//Commit
             return View(board);
         }
 
