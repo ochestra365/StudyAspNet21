@@ -37,22 +37,21 @@
                     </a>
                 </li>
                 @if (string.IsNullOrEmpty(hca.HttpContext.Session.GetString("UserEmail")))
-                {
+            {
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">
+                    <i class="material-icons">lock_open</i> Login
+                </a>
+            </li>
+            }
+        else
+        {
             <li class="nav-item">
                 <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">
                     <i class="material-icons">lock_open</i> Login(@hca.HttpContext.Session.GetString("UserEmail"))
                 </a>
             </li>
- }
-        else
-        {
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Logout">
-                    <i class="material-icons">lock</i> Logout
-                </a>
-            </li>
-}
-               
+        }
             </ul>
         </div>
     </div>

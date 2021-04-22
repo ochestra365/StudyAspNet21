@@ -1,9 +1,12 @@
-﻿@model MyPortpolioWeb.Models.Board
+﻿@model MyPortpolioWeb.Models.Manages
 
 @{
     ViewData["Title"] = "Delete";
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
 }
+
+<h1>Delete</h1>
+
 <script src="~/plugin/ckeditor/ckeditor.js"></script>
 
 <div class="col-lg col-md ml-auto mr-auto">
@@ -13,6 +16,12 @@
                 <div class="col-md-11 ml-auto mr-auto">
                     <h3 class="text-center title" style="color:black">Board</h3>
                     <dl class="row">
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Category)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Category)
+                        </dd>
                         <dt class="col-sm-2">
                             @Html.DisplayNameFor(model => model.Subject)
                         </dt>
@@ -31,22 +40,10 @@
                         <dd class="col-sm-10">
                             @Html.DisplayFor(model => model.RegDate)
                         </dd>
-                        <dt class="col-sm-2">
-                            @Html.DisplayNameFor(model => model.ReadCount)
-                        </dt>
-                        <dd class="col-sm-10">
-                            @Html.DisplayFor(model => model.ReadCount)
-                        </dd>
-                        <dt class="col-sm-2">
-                            @Html.DisplayNameFor(model => model.Writer)
-                        </dt>
-                        <dd class="col-sm-10">
-                            @Html.DisplayFor(model => model.Writer)
-                        </dd>
                     </dl>
 
                     <form asp-action="Delete">
-                        <input type="hidden" asp-for="id" />
+                        <input type="hidden" asp-for="Id" />
                         <input type="submit" value="Delete" class="btn btn-danger" /> |
                         <a asp-action="Index">Back to List</a>
                     </form>

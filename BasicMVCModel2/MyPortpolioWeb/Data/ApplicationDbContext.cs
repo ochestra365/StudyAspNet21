@@ -17,5 +17,7 @@ namespace MyPortpolioWeb.Data
         public DbSet<MyPortpolioWeb.Models.Account> Account { get; set; }
 
        public DbSet<Board> Boards { get; set; }
+
+       public DbSet<MyPortpolioWeb.Models.Manages> Manages { get; set; }
     }
 }

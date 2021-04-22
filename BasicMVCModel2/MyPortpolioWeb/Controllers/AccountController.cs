@@ -31,7 +31,8 @@ namespace MyPortpolioWeb.Controllers
 
         public async Task<IActionResult> Login([Bind("Email,Password")] Account account)
         {
-            if (ModelState.IsValid)
+            bool isvalid = true;//고쳤다!!!!!!!!!!!!!!!!
+            if (/*ModelState.IsValid*/isvalid)
             {
                 var result = CheckAccount(account.Email, account.Password);
                 if(result==null)//계정이 없음
