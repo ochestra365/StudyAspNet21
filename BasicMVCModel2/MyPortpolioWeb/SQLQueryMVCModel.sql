@@ -1,7 +1,7 @@
 USE [master]
 GO
 
-/****** Object:  Database [MVCWebLab]    Script Date: 2021-04-21 오후 4:10:29 ******/
+/****** Object:  Database [MVCWebLab]    Script Date: 2021-04-22 오후 3:10:28 ******/
 CREATE DATABASE [MVCWebLab]
  CONTAINMENT = NONE
  ON  PRIMARY 
