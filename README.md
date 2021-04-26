@@ -62,6 +62,7 @@ Favorite 버튼<br>
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%A0%91%EC%B4%89.png" ><br>
 버튼을 누르면 나의 DB로 넘어오게 된다.<br>
 
+
 4. 로그인 화면
 ---------
 -----------
@@ -76,19 +77,28 @@ Favorite 버튼<br>
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%B0%BD%EC%B6%9C.png" width="40%" height="30%" ><br>
 게시판의 Create<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9E%91%EC%84%B1.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B8.png" width="40%" height="30%" ><br>
 게시판의 Read<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B82.png" width="40%" height="30%" ><br>
 게시판의 Update<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B83.png" width="40%" height="30%" ><br>
 게시판의 Delete<br>
 
 ~~~
 CRUD MATRIX: 단위 업무 기능과 엔티티타입, 단위 업무 기능과 단위 주제 영역, 기본 프로세스와 엔티티타입, 현시스템의 프로시저와 엔티티타입 간의 관계를 표시하는 매트릭스. 단위 업무 기능이나 기본프로세스가 실행될 때 각 엔티티타입에 어떤 액션을 취하는지를 C(Create : 생성), U(Update : 수정), D(Delete : 삭제), R(Read : 조회)로 표시한다. 이 매트릭스를 통하여 각 업무활동이 각 자료를 충분히 사용하고 있는가, 누락된 자료나 업무 활동은 없는가, 중복 정의된 자료나 업무 활동은 없는 가 등을 검증한다. 모든 동작이 표시되면 클러스터링을 수행한다.
 [네이버 지식백과] CRUD Matrix - 씨알유디 매트릭스 (지형 공간정보체계 용어사전, 2016. 1. 3., 이강원, 손호웅)
 ~~~
+DB연동 확인<br>
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
+
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
+
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
 
 ## 3. 해당코드정리
 ----------------
