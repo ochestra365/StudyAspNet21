@@ -48,10 +48,6 @@ namespace MyPortpolioWeb.Controllers
         {
             return View();
         }
-
-        // POST: Manage/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Subject,Category,Contents,RegDate")] Manages manages)
@@ -65,7 +61,6 @@ namespace MyPortpolioWeb.Controllers
             }
             return View(manages);
         }
-
         // GET: Manage/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -81,9 +76,6 @@ namespace MyPortpolioWeb.Controllers
             }
             return View(manages);
         }
-
-        // POST: Manage/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]

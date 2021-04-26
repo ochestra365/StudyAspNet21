@@ -25,7 +25,6 @@ namespace MyPortpolioWeb.Controllers
         {
             var pageNumber = page ?? 1;//page 값이 0이면 1
             var pageSize = 10;
-
             var boards = await _context.Boards.ToPagedListAsync(pageNumber, pageSize);
             return View(boards);
         }
