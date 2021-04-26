@@ -11,18 +11,18 @@
 2. 프로그램 시행 화면 구분<br>
 3. 해당코드정리<br>
 4. 학습사항 정리<br>
+5. 오류 디버깅함과정 정리<br>
 
 ------------------
 ## 1. 간단한 프로그래밍 작성 절차
 __우리가 평소에 알고 있는 주소록은 무엇일까?__<br>
 <img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EB%A1%9D.png" width="60%" height="40%" ><br>
-위 사진은 네이버의 주소록이다. 주소록의 기능에 대해서 알아보도록 하자!!(●'◡'●)<br>
+ASP.NET의 강력한 활용을 통해서 초심자도 웹 사이트를 만들 수 있다.(●'◡'●)<br>
 ### 작성 전략<br>
 1.  MVC모델을 활용한다.
-2. 누겟페키지를 적극 활용한다.
-3. 주소를 수정할 수 있어야 한다.
+2. 누겟페키지를 적극 활용한다.<br><img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EB%88%84%EA%B2%9F%ED%8C%A8%ED%82%A4%EC%A7%80.png" width="40%" height="30%" ><br>
+3. DB를 연동이 잘 되어야 한다.
 4. 주소를 삭제할 수 있어야 한다.<br>
-
 --------------
 ## 2. 프로그램 시행해보기
 ### 콘솔창에서 바라본 출력화면<br>
