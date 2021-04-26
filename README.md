@@ -61,21 +61,25 @@ Favorite 버튼<br>
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%A0%91%EC%B4%89.png" ><br>
 버튼을 누르면 나의 DB로 넘어오게 된다.<br>
 
-4. 주소수정
+4. 로그인 화면
 ---------
 -----------
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
-이번엔 3번을 눌러서 주소를 수정해보자.<br>
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EC%88%98%EC%A0%952.png" width="40%" height="30%" ><br>
-해당 화면과 같이 수정을 해보았다.
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4.png" width="40%" height="30%" ><br>
+로그인 창 화면이다.<br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%9B%84%20%EA%B4%80%EB%A6%AC%EC%9E%90%20%ED%99%94%EB%A9%B4.png" width="40%" height="30%" ><br>
+로그인 이후 관리자 화면에서 조정할 수 있다.
 
-5. 주소전체출력
+5. 게시판 CURD
 ---------
 -----------
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EC%A0%84%EC%B2%B4%EC%B6%9C%EB%A0%A5.png" width="40%" height="30%" ><br>
-어느 날 해커가 들어와서 나의 프로그램에 장난질을 했다!!<br>
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EC%A0%84%EC%B2%B4%EC%B6%9C%EB%A0%A52.png" width="40%" height="30%" ><br>
-슬프게도 나의 프로그램은 보안이 약해서 그대로 뚫려버렸다... 보안 공부를 해야 할 필요가 있다!!
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%B0%BD%EC%B6%9C.png" width="40%" height="30%" ><br>
+게시판의 Create<br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9E%91%EC%84%B1.png" width="40%" height="30%" ><br>
+게시판의 Read
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
+게시판의 Update
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.pngg" width="40%" height="30%" ><br>
+게시판의 Delete
 
 6. 주소삭제
 ------------
