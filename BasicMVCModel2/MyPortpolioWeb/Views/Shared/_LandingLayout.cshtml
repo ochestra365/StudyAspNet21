@@ -4,8 +4,10 @@
 @Html.Partial("HeadPage.cshtml")
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <body class="landing-page sidebar-collapse">
+
     @Html.Partial("NavPage.cshtml")
     <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/profile_city.jpg')">
+
         @* ASP 닷넷에서 쓰는 루트 경로를 쓸 수가 없는 것이다. ASP 닷넷이 경로 섹터는 주로 DB와 연동된 부분이다. *@
         <div class="container">
             <div class="row">
@@ -31,96 +33,68 @@
                         @RenderBody()
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">Let&apos;s talk about Me</h2>
-                        <h5 class="description">
-                            If you have any question about me, Please press the CONTACT button above my Web Site.<br />I&apos;ll response you as soon as possible.<br />
-                            As a C# Programmer, I have the strength about making solution for your company.<br />
-                            And There are a lot of Skills I can do in your company.<br />I recommend You don&apos;t miss this good chance.
-                            @* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>*@
-                        </h5>
-                    </div>
-                </div>
-                <div class="features">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-info">
-                                    <i class="material-icons">chat</i>
-                                </div>
-                                <h4 class="info-title">Commnunication Skills</h4>
-                                <p>
-                                    I can speak English Discussion. <br />so I can work for your company where need English.<br />And I can suggest you to solve the Problem where need Logical Process.<br />Because I trained sufficiently.
-                                </p>
-                                <p>
+                    <div class="features">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <button type="button" class="btn btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="info">
+                                        <div class="icon icon-info">
+                                            <i class="material-icons">chat</i>
+                                        </div>
+                                        <h4 class="info-title">Commnunication Skills</h4>
+                                    </div>
+                                </button>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="material-icons">verified_user</i>
-                                </div>
-                                <h4 class="info-title">Verified_Programmer</h4>
-                                <p>Although I have been majored Finance and Accounting,<br /> I trained so much time Programming.<br /> And I can Communicate more Professional where need Financial Requirements. </p>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="info">
+                                        <div class="icon icon-success">
+                                            <i class="material-icons">verified_user</i>
+                                        </div>
+                                        <h4 class="info-title">Verified_Programmer</h4>
+                                    </div>
+                                </button>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-danger">
-                                    <i class="material-icons">fingerprint</i>
-                                </div>
-                                <h4 class="info-title">Fingerprint</h4>
-                                <p>I promise that I can give your company a variety of tactical approach in your Industry Area.<br /> So you can get much Profit and Increasement of Sales.</p>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="info">
+                                        <div class="icon icon-danger">
+                                            <i class="material-icons">fingerprint</i>
+                                        </div>
+                                        <h4 class="info-title">Verified_Programmer</h4>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section text-center">
-                <h2 class="title">What I do</h2>
-                <div class="team">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="team-player">
-                                <div class="card card-plain">
-                                    <div class="col-md-6 ml-auto mr-auto">
-                                        <img src="~/assets/img/examples/ERP.png" alt="Thumbnail Image" class="img-raised img-fluid">
-                                    </div>
-                                    <h4 class="card-title">
-                                        Stock Management System
-                                        <br>
-                                        <small class="card-description text-muted">  <a href="https://github.com/ochestra365/MiniProject_Desktop/tree/main/WpfSMSApp">ERP_Git Click!</a> </small>
-                                    </h4>
+                <div class="section text-center">
+                    <h2 class="title">What did i do?</h2>
+                    <div class="team">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://github.com/ochestra365/MiniProject_Desktop/tree/main/WpfSMSApp" target="_blank" class="btn btn-primary btn-raised btn-lg">
+                                    <i class="fa fa-play"></i> Stock Management System Click!
+                                </a>
+                                <img src="~/assets/img/examples/ERP.png" alt="Thumbnail Image" class="img-raised img-fluid">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-player">
+                                    <a href="https://github.com/ochestra365/StudyDesktopApp" target="_blank" class="btn btn-primary btn-raised btn-lg">
+                                        <i class="fa fa-play"></i> StudyDesktopApp Git Click!
+                                    </a>
+                                    <img src="~/assets/img/examples/DeskTopAPp.png" alt="Thumbnail Image" class="img-raised img-fluid">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team-player">
-                                <div class="card card-plain">
-                                    <div class="col-md-6 ml-auto mr-auto">
-                                        <img src="~/assets/img/faces/DesktopApp.png" alt="Thumbnail Image" class="img-raised img-fluid">
-                                    </div>
-                                    <h4 class="card-title">
-                                        Treating Application of Desktop
-                                        <br />
-                                        <small class="card-description text-muted">  <a href="https://github.com/ochestra365/StudyDesktopApp">StudyDesktopApp_Git Click!</a> </small>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team-player">
-                                <div class="card card-plain">
-                                    <div class="col-md-6 ml-auto mr-auto">
-                                        <img src="~/assets/img/examples/Responsive Web.png" alt="Thumbnail Image" class="img-raised img-fluid">
-                                    </div>
-                                    <h4 class="card-title">
-                                        Stock Management System
-                                        <br>
-                                        <small class="card-description text-muted"><a href="https://github.com/ochestra365/Studyhtml/tree/main/StudyHtml">HTML_Git Click!</a> </small>
-                                    </h4>
-                                    <br />
+                            <div class="col-md-4">
+                                <div class="team-player">
+                                    <a href="https://github.com/ochestra365/StudyDesktopApp" target="_blank" class="btn btn-primary btn-raised btn-lg">
+                                        <i class="fa fa-play"></i> HTMLGit Click!
+                                    </a>
+                                    <img src="~/assets/img/examples/Responsive Web.png" alt="Thumbnail Image" class="img-raised img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -128,8 +102,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    @Html.Partial("FooterPage.cshtml")
-    @await RenderSectionAsync("Scripts", required: false)
+        @Html.Partial("FooterPage.cshtml")
+        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
