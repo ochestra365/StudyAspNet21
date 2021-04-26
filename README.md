@@ -36,24 +36,30 @@ MVC: 소프트웨어 설계에서 세 가지 구성 요소인 모델(Model), 뷰
 1. 시작화면
 -----------
 -----------
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%B6%9C%EB%A0%A5%ED%99%94%EB%A9%B4.png" width="40%" height="30%" ><br>
-콘솔창의 초기 출력화면이다.
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%B2%AB%ED%99%94%EB%A9%B4.png" width="40%" height="30%" ><br>
+웹 사이트의 초기화면이다. 상단의 메뉴 바를 통해서 원하는 세션으로 이동이 가능하다.
+~~~
+세션(session): 컴퓨터 과학에서, 특히 네트워크 분야에서 반영구적이고 상호작용적인 정보 교환을 전제하는 둘 이상의 통신 장치나 컴퓨터와 사용자 간의 대화나 송수신 연결상태를 의미하는 보안적인 다이얼로그(dialogue) 및 시간대를 가리킨다. 따라서 세션은 연결상태를 유지하는것보다 연결상태의 안정성을 더 중요시 하게된다.
+~~~
 
-2.  주소입력
+2.  포트폴리오 메뉴
 ------------
 -----------
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EC%9E%85%EB%A0%A5.png" width="40%" height="30%" ><br>
-1번을 누르고 다음과 같은 주소를 입력해 보았다.<br>
+더미화면이다. 수정필요<br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A41.png" width="40%" height="30%" ><br>
+스튜디오 버튼<br>
 
-3. 주소검색
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A42.png" width="40%" height="30%" ><br>
+Work 버튼<br>
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A44.png" width="40%" height="30%" ><br>
+Favorite 버튼<br>
+
+3. 접촉 메뉴
 ----------------
 -----------
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EA%B2%80%EC%83%89.png" width="40%" height="30%" ><br>
-2번을 누르고<br>
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EA%B2%80%EC%83%892.png" width="40%" height="30%" ><br>
-나의 이름을 적어보고 검색(Enter)을 해보았다.<br>
-<img src="https://github.com/ochestra365/StudyCSharp21/blob/main/chap99/AddressBookApp/%EC%BA%A1%EC%B3%90%EC%82%AC%EC%A7%84/%EC%A3%BC%EC%86%8C%EA%B2%80%EC%83%893.png" width="40%" height="30%" ><br>
-검색창에서 나의 정보가 나왔다.<br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%A0%91%EC%B4%89.png" ><br>
+버튼을 누르면 나의 DB로 넘어오게 된다.<br>
 
 4. 주소수정
 ---------
