@@ -92,13 +92,13 @@ CRUD MATRIX: 단위 업무 기능과 엔티티타입, 단위 업무 기능과 �
 ~~~
 DB연동 확인<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B8.png" width="40%" height="30%" ><br>
 
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B82.png" width="40%" height="30%" ><br>
 
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B83.png" width="40%" height="30%" ><br>
 
 ## 3. 해당코드정리
 ----------------
