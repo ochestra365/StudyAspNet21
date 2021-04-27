@@ -2,8 +2,8 @@
 <span style="color:red">ASP.NET My Portfolio Project</span>
 <br>
 ![포트폴리오 깃허브](https://github.com/ochestra365/StudyAspNet21/tree/main/BasicMVCModel2/MyPortpolioWeb)<br>
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%94%84%EB%A1%9C%ED%95%84.png" width="100%" height="100%" ><br>
-조금 더 괜찮은 미래를 위해서!
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%94%84%EB%A1%9C%ED%95%84.png" width="100%" height="100%" ><br><br>
+조금 더 괜찮은 미래를 위해서!<br><br>
 --------------
 
 ## 목차 <br>
@@ -77,13 +77,13 @@ Favorite 버튼<br>
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%B0%BD%EC%B6%9C.png" width="40%" height="30%" ><br>
 게시판의 Create<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B8.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9E%91%EC%84%B1.png" width="40%" height="30%" ><br>
 게시판의 Read<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B82.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
 게시판의 Update<br>
 
-<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/DB%EC%97%B0%EB%8F%99%ED%99%95%EC%9D%B83.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%82%AD%EC%A0%9C.png" width="40%" height="30%" ><br>
 게시판의 Delete<br>
 
 ~~~
