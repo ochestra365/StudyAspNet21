@@ -146,7 +146,32 @@ F9를 눌러서 디버깅해보니 if문이 아예 부정으로 되어 있었다
 컨트롤 박스에 type="Submit"을 넣지 않아서 이벤트가 발생해도 데이터가 DB로 연동되지 않았따. 컨트롤러를 생성하고 어떤 작업을 할 것인지 지정해줘야 한다.<br>
 
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%20%EB%84%A4%EC%9D%B4%EB%B0%8D%20%EC%8B%A4%EC%88%98.png" width="40%" height="30%" ><br>
-가장 많이 하는 실수로 네이밍을 잘못 적는 것이다. 네이밍 규칙이 난잡하면 파라미터를 잘못적어서 컴파일 하지 못할 수 있다.<br>
+가장 많이 하는 실수로 네이밍을 잘못 적는 것이다. 네이밍 규칙이 난잡하면 파라미터를 잘못적어서 컴파일 하지 못할 수 있다.<br><br>
+
+부트스트랩 적용 이후 화면들
+-----------
+-----------
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%88%98%EC%A0%95%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%BB%A8%ED%83%9D%ED%8A%B8%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A41%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A43%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A43%EC%88%98%EC%A0%95.png" width="40%" height="30%" ><br>
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%BB%A8%ED%83%9D.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%BB%A8%ED%83%9D%ED%8A%B82.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%BB%A8%ED%83%9D%ED%8A%B83.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%BB%A8%ED%83%9D%ED%8A%B8%204.png" width="40%" height="30%" ><br>
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%BB%A8%ED%83%9D%ED%8A%B85.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4.png" width="40%" height="30%" ><br>
+
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%96%B4%EB%93%9C%EB%AF%BC.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%96%B4%EB%93%9C%EB%AF%BC.png" width="40%" height="30%" ><br>
+
+오픈 API를 이용해 구글 검색기와 구글맵을 설치해 볼것이다.<br> 
+
+
+
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
 
