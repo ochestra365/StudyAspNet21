@@ -168,7 +168,10 @@ F9를 눌러서 디버깅해보니 if문이 아예 부정으로 되어 있었다
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%96%B4%EB%93%9C%EB%AF%BC.png" width="40%" height="30%" ><br>
 <img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EC%96%B4%EB%93%9C%EB%AF%BC.png" width="40%" height="30%" ><br>
 
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EB%8F%99%EC%A0%81%20%ED%99%9C%EC%9A%A9.png" width="40%" height="30%" ><br>
+<img src="https://github.com/ochestra365/StudyAspNet21/blob/main/BasicMVCModel2/MyPortpolioWeb/Image_for_Git_hub/%EB%8F%99%EC%A0%81%ED%99%9C%EC%9A%A92.png" width="40%" height="30%" ><br>
 오픈 API를 이용해 구글 검색기와 구글맵을 설치해 볼것이다.<br> 
+모바일로 구동시 반응형 웹 구동이 가능하다. 모달도 한번 시도해볼 것이다.<br>
 
 
 
