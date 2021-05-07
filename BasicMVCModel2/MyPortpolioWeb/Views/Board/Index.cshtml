@@ -65,9 +65,20 @@
                                     @Html.DisplayFor(modelItem => item.Writer)
                                 </td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                                            Edit
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a asp-action="Edit" asp-route-id="@item.id">Edit</a></li>
+                                            <li><a asp-action="Details" asp-route-id="@item.id">Details</a></li>
+                                            <li><a asp-action="Delete" asp-route-id="@item.id">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                    @*<a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
                                     <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
                                 </td>
                             </tr>
                             }
